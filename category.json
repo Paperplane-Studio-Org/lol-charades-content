@@ -1,0 +1,85 @@
+[
+  {
+    "id": "blockbuster",
+    "title": "Movies",
+    "description": "Hollywood Blockbusters",
+    "icon": "movie_filter",
+    "color": "0xFFFFD700",
+    "difficulty": "easy",
+    "tag": "Hot",
+    "isLocked": false,
+    "words": ["Star Wars", "Titanic", "Inception", "Jaws", "Avatar", "The Matrix", "Toy Story", "Iron Man", "Frozen", "Lion King", "Gladiator", "Interstellar", "Jurassic Park", "Harry Potter", "The Avengers", "Pulp Fiction", "The Dark Knight", "Forrest Gump"]
+  },
+  {
+    "id": "animal_kingdom",
+    "title": "Animals",
+    "description": "Wild & Domestic",
+    "icon": "pets",
+    "color": "0xFF00BAFF",
+    "difficulty": "easy",
+    "isLocked": false,
+    "words": ["Elephant", "Giraffe", "Penguin", "Kangaroo", "Lion", "Tiger", "Dolphin", "Monkey", "Zebra", "Octopus", "Eagle", "Snake", "Shark", "Butterfly", "Crocodile", "Peacock", "Rhinoceros", "Flamingo"]
+  },
+  {
+    "id": "music_hits",
+    "title": "Music Icons",
+    "description": "Famous Singers & Bands",
+    "icon": "music_note",
+    "color": "0xFFFFCDD9",
+    "difficulty": "medium",
+    "isLocked": false,
+    "words": ["Taylor Swift", "Michael Jackson", "The Beatles", "Queen", "Beyonce", "Elvis Presley", "Lady Gaga", "Drake", "Madonna", "Ed Sheeran", "Adele", "Coldplay", "Rihanna", "Justin Bieber", "Bruno Mars", "Katy Perry", "Eminem", "Billie Eilish"]
+  },
+  {
+    "id": "culture_90s",
+    "title": "90s Retro",
+    "description": "Totally Rad Vibes",
+    "icon": "bolt",
+    "color": "0xFFC6E7FF",
+    "difficulty": "medium",
+    "tag": "Retro",
+    "isLocked": false,
+    "words": ["Walkman", "Tamagotchi", "Game Boy", "Friends", "Nirvana", "Spice Girls", "Fresh Prince", "Seinfeld", "Beanie Babies", "Pogs", "VHS Tapes", "Furby", "Super Nintendo", "Clueless", "Jurassic Park", "Macarena"]
+  },
+  {
+    "id": "food_world",
+    "title": "Foodie Heaven",
+    "description": "Global Cuisine & Snacks",
+    "icon": "restaurant",
+    "color": "0xFFFFE16D",
+    "difficulty": "easy",
+    "isLocked": false,
+    "words": ["Pizza", "Sushi", "Taco", "Burger", "Pasta", "Dim Sum", "Curry", "Steak", "Ramen", "Falafel", "Croissant", "Paella", "Pancakes", "Hot Dog", "Donut", "Ice Cream", "Lasagna", "Tiramisu"]
+  },
+  {
+    "id": "gaming_lore",
+    "title": "Gaming Legends",
+    "description": "Video Game Characters",
+    "icon": "videogame_asset",
+    "color": "0xFF81CFFF",
+    "difficulty": "hard",
+    "isLocked": true,
+    "words": ["Super Mario", "Legend of Zelda", "Master Chief", "Pikachu", "Lara Croft", "Kratos", "Sonic the Hedgehog", "Solid Snake", "Geralt of Rivia", "Nathan Drake", "Crash Bandicoot", "Doomguy", "Mega Man", "Cloud Strife", "Spyro", "Pac-Man"]
+  },
+  {
+    "id": "travel_destinations",
+    "title": "World Travel",
+    "description": "Famous Places & Landmarks",
+    "icon": "public",
+    "color": "0xFFB2EBF2",
+    "difficulty": "medium",
+    "isLocked": false,
+    "words": ["Eiffel Tower", "Statue of Liberty", "Great Wall of China", "Machu Picchu", "Colosseum", "Taj Mahal", "Pyramids of Giza", "Grand Canyon", "Mount Everest", "Sydney Opera House", "Louvre Museum", "Big Ben"]
+  },
+  {
+    "id": "superheroes",
+    "title": "Superheroes",
+    "description": "Caped Crusaders",
+    "icon": "bolt",
+    "color": "0xFFF44336",
+    "difficulty": "easy",
+    "tag": "Popular",
+    "isLocked": false,
+    "words": ["Spider-Man", "Batman", "Superman", "Wonder Woman", "Iron Man", "Captain America", "Black Widow", "Thor", "Hulk", "Black Panther", "Flash", "Aquaman", "Green Lantern", "Wolverine"]
+  }
+]
