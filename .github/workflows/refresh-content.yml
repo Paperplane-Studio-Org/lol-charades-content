@@ -4,8 +4,8 @@ on:
   # Allow manual triggering
   workflow_dispatch:
   # Scheduled daily execution at midnight UTC
-  schedule:
-    - cron: '0 0 * * *'
+  # schedule:
+  #   - cron: '0 0 * * *'
 
 jobs:
   refresh:
