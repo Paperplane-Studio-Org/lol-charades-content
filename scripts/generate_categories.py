@@ -135,7 +135,7 @@ def validate_and_save(categories):
     metadata = {
         "version": version,
         "lastUpdated": datetime.datetime.now().isoformat(),
-        "contentUrl": "https://raw.githubusercontent.com/Paperplane-Studio-Org/LOL_Charades_Content/main/category.json"
+        "contentUrl": "https://raw.githubusercontent.com/Paperplane-Studio-Org/lol-charades-content/main/category.json"
     }
     
     with open(METADATA_FILE, 'w') as f:
