@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           # Use the provided token for checkout and push if needed
-          token: ${{ secrets.CONTENT_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          token: ${{ github.token }}
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -54,7 +54,7 @@ jobs:
           fi
         env:
           # Use the content repo token for pushing if configured
-          GITHUB_TOKEN: ${{ secrets.CONTENT_REPO_TOKEN || secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
 
       - name: Handle Failure
         if: failure()
