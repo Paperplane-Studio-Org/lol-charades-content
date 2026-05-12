@@ -66,7 +66,7 @@
       "Milkshake",
       "Watermelon"
     ],
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "super_powers",
@@ -124,7 +124,7 @@
       "The Floss",
       "Tapping a Microphone"
     ],
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "retro_gaming",
@@ -237,7 +237,7 @@
       "Archery",
       "Sumo Wrestling"
     ],
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "daily_routine",
@@ -315,11 +315,15 @@
       "Dangal",
       "Dil Chahta Hai",
       "Dilwale Dulhania Le Jayenge",
+      "Gadar 2",
       "Gully Boy",
+      "Jab We Met",
       "Kabhi Khushi Kabhie Gham",
       "Kabir Singh",
+      "Kuch Kuch Hota Hai",
       "Lagaan",
       "Munna Bhai M.B.B.S",
+      "Munna Bhai M.B.B.S.",
       "Munna Bhai MBBS",
       "Om Shanti Om",
       "Pathaan",
@@ -331,7 +335,7 @@
     ],
     "isLocked": false,
     "tag": "Hot",
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "tamil_comedy_dialogs",
@@ -504,7 +508,7 @@
       "Vaathi Coming"
     ],
     "isLocked": true,
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "superhero_universe",
@@ -543,7 +547,7 @@
       "Wonder Woman"
     ],
     "isLocked": false,
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "gaming_legends",
@@ -581,7 +585,7 @@
     ],
     "isLocked": true,
     "tag": "Pro",
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "daily_life_chaos",
@@ -636,7 +640,7 @@
       "Vikram Vedha"
     ],
     "isLocked": false,
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "desi_street_food",
@@ -646,6 +650,7 @@
     "color": "0xFF4CAF50",
     "difficulty": "easy",
     "words": [
+      "Bhel Puri",
       "Biryani",
       "Chicken 65",
       "Chicken Biryani",
@@ -659,9 +664,11 @@
       "Lassi",
       "Mango Lassi",
       "Masala Dosa",
+      "Medhu Vada",
       "Momos",
       "Pani Puri",
       "Papdi Chaat",
+      "Parotta Salna",
       "Pav Bhaji",
       "Rasgulla",
       "Samosa",
@@ -725,7 +732,7 @@
       "Wi-Fi Not Working"
     ],
     "isLocked": false,
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "indian_90s_kids",
@@ -754,7 +761,7 @@
     ],
     "isLocked": true,
     "tag": "Retro",
-    "fontColor": "0xFFFFFFFF"
+    "fontColor": "0xFF000000"
   },
   {
     "id": "tamil_comedy_gold",
@@ -762,24 +769,41 @@
     "description": "Act out the funniest punchlines from Kollywood legends.",
     "icon": "bolt",
     "color": "0xFFFF4500",
-    "fontColor": "0xFFFFFFFF",
+    "fontColor": "0xFF000000",
     "difficulty": "hard",
     "words": [
       "Ahaa Enna Oru Puthi",
+      "Ahaan!",
       "Building Strongu Basement Weaku",
+      "Building strong-u basement weak-u",
       "Enna Kodumai Saravanan",
       "Ennama Ippadi Panreengalema",
+      "Gethu",
       "Hello Dubai",
+      "Hello... Dubai-ah?",
       "I am a God's Child",
+      "I'm the king of the world",
+      "Ippave kanna kattudhe",
       "Ippo Enna Panna Pora?",
       "Kaipulla",
+      "Karuppu dhaan enakku pudicha colour-u",
+      "Naai Sekar",
+      "Naan appave sonnen",
       "Naan oru thadava sonna nooru thadava sonna mathiri",
       "Nesamani",
+      "Petta Paraak",
+      "Police-u kitta maatikitta",
       "Risk Edukkurathula Namma Nallu Sapdura Mathiri",
+      "Risk-u edukkurathu ellam rusk-u saapidura mathiri",
+      "Singam Puli",
       "Sirippu Varuthu Sirippu Varuthu",
+      "Suna Pana",
       "Thillu Mullu",
       "Vada Poche",
-      "Vaipilla Raja"
+      "Vaipilla Raja",
+      "Vandhutanya Vandhutanya",
+      "Varuthapadatha Valibar Sangam",
+      "Why Blood? Same Blood!"
     ],
     "isLocked": false,
     "tag": "LOL"
@@ -893,5 +917,208 @@
       "Yoga Pose"
     ],
     "isLocked": false
+  },
+  {
+    "id": "kollywood_action",
+    "title": "Mass Kollywood",
+    "description": "Mass entries and signature styles of Tamil Superstars.",
+    "icon": "bolt",
+    "color": "0xFF1E90FF",
+    "fontColor": "0xFF000000",
+    "difficulty": "medium",
+    "words": [
+      "Baashha",
+      "Chiyaan Vikram",
+      "Enthiran",
+      "Jai Bhim",
+      "Leo - Bloody Sweet",
+      "Mankatha",
+      "Master",
+      "Ponniyin Selvan",
+      "Sivakarthikeyan",
+      "Superstar Rajinikanth",
+      "Suriya - Singam",
+      "Thala Ajith",
+      "Thalapathy Vijay",
+      "Theri Baby",
+      "Ulaganayagan Kamal Haasan",
+      "Vikram - Eagle Is Coming",
+      "Viswasam"
+    ],
+    "isLocked": false
+  },
+  {
+    "id": "animal_antics",
+    "title": "Animal Kingdom",
+    "description": "Wild, domestic, and everything in between!",
+    "icon": "pets",
+    "color": "0xFF8B4513",
+    "fontColor": "0xFFFFFFFF",
+    "difficulty": "easy",
+    "words": [
+      "Bat",
+      "Butterfly",
+      "Cat",
+      "Cow",
+      "Crocodile",
+      "Dog",
+      "Elephant",
+      "Giraffe",
+      "Kangaroo",
+      "Lion",
+      "Monkey",
+      "Owl",
+      "Peacock",
+      "Penguin",
+      "Rabbit",
+      "Shark",
+      "Snake",
+      "Zebra"
+    ],
+    "isLocked": false
+  },
+  {
+    "id": "gaming_universe",
+    "title": "Gaming Zone",
+    "description": "Characters and games every gamer knows.",
+    "icon": "videogame_asset",
+    "color": "0xFF9400D3",
+    "fontColor": "0xFFFFFFFF",
+    "difficulty": "hard",
+    "words": [
+      "Among Us",
+      "Angry Birds",
+      "Call of Duty",
+      "Candy Crush",
+      "Fortnite",
+      "Free Fire",
+      "GTA Vice City",
+      "God of War",
+      "Minecraft",
+      "PUBG Mobile",
+      "Pac-Man",
+      "Pok\u00e9mon GO",
+      "Super Mario",
+      "Temple Run",
+      "Tetris",
+      "The Last of Us"
+    ],
+    "isLocked": true,
+    "tag": "Pro"
+  },
+  {
+    "id": "musical_legends",
+    "title": "Global Beats",
+    "description": "Iconic singers and musical instruments.",
+    "icon": "music_note",
+    "color": "0xFFFF69B4",
+    "fontColor": "0xFF000000",
+    "difficulty": "medium",
+    "words": [
+      "A.R. Rahman",
+      "Anirudh Ravichander",
+      "Drums",
+      "Elvis Presley",
+      "Flute",
+      "Freddie Mercury",
+      "Guitar",
+      "Kishore Kumar",
+      "Lata Mangeshkar",
+      "Michael Jackson",
+      "Piano",
+      "S.P. Balasubrahmanyam",
+      "Shakira",
+      "Sid Sriram",
+      "Tabla",
+      "Taylor Swift",
+      "Violin"
+    ],
+    "isLocked": false
+  },
+  {
+    "id": "job_fails",
+    "title": "Funny Jobs",
+    "description": "Daily professions acting out their worst days.",
+    "icon": "public",
+    "color": "0xFF4682B4",
+    "fontColor": "0xFF000000",
+    "difficulty": "medium",
+    "words": [
+      "Barber",
+      "Bus Conductor",
+      "Chef",
+      "Cricket Umpire",
+      "Electrician",
+      "Firefighter",
+      "Gym Trainer",
+      "Librarian",
+      "News Anchor",
+      "Photographer",
+      "Pilot",
+      "Software Engineer",
+      "Surgeon",
+      "Tailor",
+      "Traffic Police",
+      "Yoga Instructor"
+    ],
+    "isLocked": false
+  },
+  {
+    "id": "90s_nostalgia_india",
+    "title": "90s Desi Kids",
+    "description": "Things only an 90s Indian kid would remember!",
+    "icon": "bolt",
+    "color": "0xFFFF8C00",
+    "fontColor": "0xFF000000",
+    "difficulty": "hard",
+    "words": [
+      "Beyblades",
+      "Boomer Bubblegum",
+      "Brick Game",
+      "Cello Gripper Pen",
+      "Comics like Chacha Chaudhary",
+      "Malgudi Days",
+      "Marbles (Goli)",
+      "Natraj Pencil",
+      "Nokia 1100",
+      "Phantom Cigarettes",
+      "Shaktimaan",
+      "Tazos",
+      "Top (Lattu)",
+      "Trump Cards",
+      "Video Cassette",
+      "Walkman"
+    ],
+    "isLocked": true,
+    "tag": "Retro"
+  },
+  {
+    "id": "superhero_clash",
+    "title": "Hero HQ",
+    "description": "Famous caped crusaders and menacing villains.",
+    "icon": "bolt",
+    "color": "0xFFB22222",
+    "fontColor": "0xFFFFFFFF",
+    "difficulty": "easy",
+    "words": [
+      "Batman",
+      "Black Panther",
+      "Captain America",
+      "Deadpool",
+      "Doctor Strange",
+      "Hulk",
+      "Iron Man",
+      "Joker",
+      "Krrish",
+      "Minnal Murali",
+      "Spider-Man",
+      "Superman",
+      "Thanos",
+      "Thor",
+      "Wolverine",
+      "Wonder Woman"
+    ],
+    "isLocked": false,
+    "tag": "New"
   }
 ]

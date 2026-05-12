@@ -29,14 +29,23 @@ def calculate_font_color(hex_color_str):
         if len(hex_color_str) == 8:
             hex_color_str = hex_color_str[2:]
             
-        r = int(hex_color_str[0:2], 16)
-        g = int(hex_color_str[2:4], 16)
-        b = int(hex_color_str[4:6], 16)
+        r_raw = int(hex_color_str[0:2], 16) / 255.0
+        g_raw = int(hex_color_str[2:4], 16) / 255.0
+        b_raw = int(hex_color_str[4:6], 16) / 255.0
         
-        # Luminance formula
-        luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255
+        # Proper WCAG luminance calculation with gamma correction
+        def adjust(c):
+            return c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4
+            
+        r = adjust(r_raw)
+        g = adjust(g_raw)
+        b = adjust(b_raw)
         
-        return "0xFFFFFFFF" if luminance < 0.5 else "0xFF000000"
+        luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
+        
+        # Standard WCAG threshold is 0.179. 
+        # We use a slightly lower threshold (0.15) to favor black text on medium-grey backgrounds as requested.
+        return "0xFF000000" if luminance > 0.15 else "0xFFFFFFFF"
     except Exception as e:
         print(f"Error calculating font color for {hex_color_str}: {e}")
         return "0xFF000000"
