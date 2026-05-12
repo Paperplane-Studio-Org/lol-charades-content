@@ -35,7 +35,8 @@
       "Snake",
       "Squirrel",
       "Tiger"
-    ]
+    ],
+    "fontColor": "0xFF000000"
   },
   {
     "id": "snack_attack",
@@ -64,7 +65,8 @@
       "Soup",
       "Milkshake",
       "Watermelon"
-    ]
+    ],
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "super_powers",
@@ -92,7 +94,8 @@
       "Elasticity",
       "Healing Factor",
       "Weather Control"
-    ]
+    ],
+    "fontColor": "0xFF000000"
   },
   {
     "id": "pop_star_anthems",
@@ -120,7 +123,8 @@
       "Gangnam Style",
       "The Floss",
       "Tapping a Microphone"
-    ]
+    ],
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "retro_gaming",
@@ -148,7 +152,8 @@
       "Wii Sports",
       "Mortal Kombat",
       "Mega Man"
-    ]
+    ],
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "hollywood_hits",
@@ -175,7 +180,8 @@
       "Iron Man",
       "Finding Nemo",
       "The Wizard of Oz"
-    ]
+    ],
+    "fontColor": "0xFF000000"
   },
   {
     "id": "famous_faces",
@@ -201,7 +207,8 @@
       "William Shakespeare",
       "Bruce Lee",
       "Maleficent"
-    ]
+    ],
+    "fontColor": "0xFF000000"
   },
   {
     "id": "extreme_sports",
@@ -229,7 +236,8 @@
       "Fencing",
       "Archery",
       "Sumo Wrestling"
-    ]
+    ],
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "daily_routine",
@@ -256,7 +264,8 @@
       "Gardening",
       "Vacuuming",
       "Washing Dishes"
-    ]
+    ],
+    "fontColor": "0xFF000000"
   },
   {
     "id": "scifi_fantasies",
@@ -283,7 +292,8 @@
       "Spaceship Landing",
       "Parallel Universe",
       "Mad Scientist"
-    ]
+    ],
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "bollywood_masala",
@@ -296,9 +306,11 @@
       "3 Idiots",
       "Andhadhun",
       "Baahubali",
+      "Bahubali",
       "Bajirao Mastani",
       "Barfi",
       "Brahmastra",
+      "Chak De India",
       "Chennai Express",
       "Dangal",
       "Dil Chahta Hai",
@@ -318,7 +330,8 @@
       "Zindagi Na Milegi Dobara"
     ],
     "isLocked": false,
-    "tag": "Hot"
+    "tag": "Hot",
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "tamil_comedy_dialogs",
@@ -358,7 +371,8 @@
       "Why This Kolaveri Di"
     ],
     "isLocked": false,
-    "tag": "Trending"
+    "tag": "Trending",
+    "fontColor": "0xFF000000"
   },
   {
     "id": "indian_street_food",
@@ -385,7 +399,8 @@
       "Samosa",
       "Vada Pav"
     ],
-    "isLocked": false
+    "isLocked": false,
+    "fontColor": "0xFF000000"
   },
   {
     "id": "kollywood_mass",
@@ -413,7 +428,8 @@
       "Vikram"
     ],
     "isLocked": true,
-    "tag": "New"
+    "tag": "New",
+    "fontColor": "0xFF000000"
   },
   {
     "id": "cricket_fever",
@@ -423,15 +439,20 @@
     "color": "0xFF003366",
     "difficulty": "medium",
     "words": [
+      "Boundary Six",
       "Boundary Sixer",
       "Bowled Out",
       "Catch of the Match",
       "Catching at Slip",
+      "Chris Gayle",
       "Clean Bowled",
       "Free Hit",
+      "Hardik Pandya",
       "Hat Trick",
       "Helicopter Shot",
       "IPL Trophy",
+      "Kapil Dev",
+      "LBW Appeal",
       "Leg Before Wicket",
       "MS Dhoni",
       "MS Dhoni Helicopter Shot",
@@ -447,14 +468,17 @@
       "Third Umpire",
       "Toss of Coin",
       "Umpire Signal",
+      "Umpires Signal",
       "Virat Kohli",
       "Virat Kohli Celebration",
       "Wicketkeeper",
+      "World Cup",
       "Yorker",
       "Yorker Delivery"
     ],
     "isLocked": false,
-    "tag": "Sports"
+    "tag": "Sports",
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "dance_anthems",
@@ -479,7 +503,8 @@
       "Urvasi Urvasi",
       "Vaathi Coming"
     ],
-    "isLocked": true
+    "isLocked": true,
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "superhero_universe",
@@ -517,7 +542,8 @@
       "Wolverine Claws",
       "Wonder Woman"
     ],
-    "isLocked": false
+    "isLocked": false,
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "gaming_legends",
@@ -528,15 +554,25 @@
     "difficulty": "hard",
     "words": [
       "Among Us",
+      "Among Us Crewmate",
       "Angry Birds",
       "Call of Duty",
       "Candy Crush",
+      "Donkey Kong",
       "FIFA",
+      "Fortnite Dance",
       "GTA Vice City",
+      "Kratos",
+      "Link",
+      "Master Chief",
       "Minecraft",
+      "Minecraft Steve",
       "PUBG",
+      "PUBG Pan",
       "Pac-Man",
+      "Pikachu",
       "Pok\u00e9mon Go",
+      "Sonic",
       "Sonic the Hedgehog",
       "Subway Surfers",
       "Super Mario",
@@ -544,7 +580,8 @@
       "Tetris"
     ],
     "isLocked": true,
-    "tag": "Pro"
+    "tag": "Pro",
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "daily_life_chaos",
@@ -569,7 +606,8 @@
       "Washing Dishes",
       "Working from Home"
     ],
-    "isLocked": false
+    "isLocked": false,
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "kollywood_hits",
@@ -597,7 +635,8 @@
       "Vikram",
       "Vikram Vedha"
     ],
-    "isLocked": false
+    "isLocked": false,
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "desi_street_food",
@@ -607,12 +646,17 @@
     "color": "0xFF4CAF50",
     "difficulty": "easy",
     "words": [
+      "Biryani",
+      "Chicken 65",
       "Chicken Biryani",
       "Chole Bhature",
+      "Dhokla",
       "Filter Coffee",
       "Gulab Jamun",
       "Idli Sambar",
       "Jalebi",
+      "Kulfi",
+      "Lassi",
       "Mango Lassi",
       "Masala Dosa",
       "Momos",
@@ -625,7 +669,8 @@
       "Vada Pav"
     ],
     "isLocked": false,
-    "tag": "New"
+    "tag": "New",
+    "fontColor": "0xFF000000"
   },
   {
     "id": "global_pop_stars",
@@ -652,7 +697,8 @@
       "Shakira Hips",
       "Taylor Swift"
     ],
-    "isLocked": true
+    "isLocked": true,
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "daily_life_struggles",
@@ -678,7 +724,8 @@
       "Washing Dishes",
       "Wi-Fi Not Working"
     ],
-    "isLocked": false
+    "isLocked": false,
+    "fontColor": "0xFFFFFFFF"
   },
   {
     "id": "indian_90s_kids",
@@ -706,6 +753,145 @@
       "Walkman"
     ],
     "isLocked": true,
+    "tag": "Retro",
+    "fontColor": "0xFFFFFFFF"
+  },
+  {
+    "id": "tamil_comedy_gold",
+    "title": "Tamil Comedy Dialogs",
+    "description": "Act out the funniest punchlines from Kollywood legends.",
+    "icon": "bolt",
+    "color": "0xFFFF4500",
+    "fontColor": "0xFFFFFFFF",
+    "difficulty": "hard",
+    "words": [
+      "Ahaa Enna Oru Puthi",
+      "Building Strongu Basement Weaku",
+      "Enna Kodumai Saravanan",
+      "Ennama Ippadi Panreengalema",
+      "Hello Dubai",
+      "I am a God's Child",
+      "Ippo Enna Panna Pora?",
+      "Kaipulla",
+      "Naan oru thadava sonna nooru thadava sonna mathiri",
+      "Nesamani",
+      "Risk Edukkurathula Namma Nallu Sapdura Mathiri",
+      "Sirippu Varuthu Sirippu Varuthu",
+      "Thillu Mullu",
+      "Vada Poche",
+      "Vaipilla Raja"
+    ],
+    "isLocked": false,
+    "tag": "LOL"
+  },
+  {
+    "id": "kollywood_superstars",
+    "title": "Kollywood Stars",
+    "description": "The biggest heroes and heroines of Tamil cinema.",
+    "icon": "public",
+    "color": "0xFF1E90FF",
+    "fontColor": "0xFF000000",
+    "difficulty": "medium",
+    "words": [
+      "Dhanush",
+      "Goundamani",
+      "Kamal Haasan",
+      "Karthi",
+      "Nayanthara",
+      "Rajinikanth",
+      "Silambarasan TR",
+      "Sivakarthikeyan",
+      "Suriya",
+      "Thala Ajith",
+      "Thalapathy Vijay",
+      "Trisha",
+      "Vadivelu",
+      "Vijay Sethupathi",
+      "Vikram"
+    ],
+    "isLocked": false,
+    "tag": "Hot"
+  },
+  {
+    "id": "action_heroes",
+    "title": "Action Heroes",
+    "description": "Global superstars and their iconic action poses.",
+    "icon": "movie_filter",
+    "color": "0xFFB22222",
+    "fontColor": "0xFFFFFFFF",
+    "difficulty": "medium",
+    "words": [
+      "Batman",
+      "Black Widow",
+      "Captain America",
+      "Deadpool",
+      "Ethan Hunt",
+      "Iron Man",
+      "Jackie Chan",
+      "James Bond",
+      "John Wick",
+      "Lara Croft",
+      "Rambo",
+      "Spiderman",
+      "Terminator",
+      "The Hulk",
+      "Wonder Woman"
+    ],
+    "isLocked": false
+  },
+  {
+    "id": "retro_beats",
+    "title": "Retro Hits",
+    "description": "90s and 80s songs and dance moves.",
+    "icon": "music_note",
+    "color": "0xFFFF69B4",
+    "fontColor": "0xFF000000",
+    "difficulty": "medium",
+    "words": [
+      "Barbie Girl",
+      "Chaiyya Chaiyya",
+      "Disco Deewane",
+      "Hamma Hamma",
+      "Macarena",
+      "Mamma Mia",
+      "Moonwalk",
+      "Muqabla Muqabla",
+      "Mustafa Mustafa",
+      "My Heart Will Go On",
+      "Stayin Alive",
+      "Thriller Dance",
+      "Urvasi Urvasi",
+      "Wannabe",
+      "YMCA"
+    ],
+    "isLocked": false,
     "tag": "Retro"
+  },
+  {
+    "id": "daily_struggles",
+    "title": "Daily Life",
+    "description": "Common things we do every day. Harder than it looks!",
+    "icon": "bolt",
+    "color": "0xFF20B2AA",
+    "fontColor": "0xFF000000",
+    "difficulty": "hard",
+    "words": [
+      "Applying Eyeliner",
+      "Brushing Teeth",
+      "Changing a Baby Diaper",
+      "Cooking an Omelette",
+      "Drinking Hot Tea",
+      "Ironing a Shirt",
+      "Parallel Parking",
+      "Sleeping in Class",
+      "Stubbing your Toe",
+      "Taking a Selfie",
+      "Threading a Needle",
+      "Typing on Laptop",
+      "Washing Clothes",
+      "Watching a Scary Movie",
+      "Yoga Pose"
+    ],
+    "isLocked": false
   }
 ]

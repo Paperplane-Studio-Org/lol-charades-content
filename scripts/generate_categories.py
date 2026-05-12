@@ -17,6 +17,29 @@ client = genai.Client(api_key=api_key)
 
 CATEGORY_FILE = 'category.json'
 METADATA_FILE = 'metadata.json'
+ 
+def calculate_font_color(hex_color_str):
+    """Calculates whether white or black text should be used based on background luminance."""
+    try:
+        # Expected format: 0xFFRRGGBB
+        if hex_color_str.startswith('0x'):
+            hex_color_str = hex_color_str[2:]
+        
+        # Take the last 6 characters (RRGGBB)
+        if len(hex_color_str) == 8:
+            hex_color_str = hex_color_str[2:]
+            
+        r = int(hex_color_str[0:2], 16)
+        g = int(hex_color_str[2:4], 16)
+        b = int(hex_color_str[4:6], 16)
+        
+        # Luminance formula
+        luminance = (0.2126 * r + 0.7152 * g + 0.0722 * b) / 255
+        
+        return "0xFFFFFFFF" if luminance < 0.5 else "0xFF000000"
+    except Exception as e:
+        print(f"Error calculating font color for {hex_color_str}: {e}")
+        return "0xFF000000"
 
 def load_existing_categories():
     """Loads existing categories from category.json."""
@@ -41,6 +64,7 @@ def generate_new_categories():
     - description: a short description
     - icon: one of [movie_filter, music_note, bolt, pets, public, videogame_asset, restaurant]
     - color: a hex color string starting with 0xFF (e.g., "0xFFFFD700")
+    - fontColor: a hex color string starting with 0xFF ("0xFFFFFFFF" for dark bg, "0xFF000000" for light bg)
     - difficulty: one of [easy, medium, hard]
     - words: a list of 15-20 relevant words or phrases to act out.
     - isLocked: boolean (false for most, true for some hard ones)
@@ -116,6 +140,10 @@ def validate_and_save(categories):
         if not isinstance(cat['words'], list) or len(cat['words']) == 0:
             print(f"Validation failed: Category {cat['id']} has no words.")
             return False
+        
+        # Inject or update fontColor based on background color
+        if 'color' in cat:
+            cat['fontColor'] = calculate_font_color(cat['color'])
 
     # Save category.json
     with open(CATEGORY_FILE, 'w') as f:
