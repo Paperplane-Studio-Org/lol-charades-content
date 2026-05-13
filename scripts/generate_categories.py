@@ -76,7 +76,7 @@ def generate_new_categories():
     - fontColor: a hex color string starting with 0xFF ("0xFFFFFFFF" for dark bg, "0xFF000000" for light bg)
     - difficulty: one of [easy, medium, hard]
     - words: a list of 15-20 relevant words or phrases to act out.
-    - isLocked: boolean (false for most, true for some hard ones)
+    - isLocked: boolean (false for "Movies, Animals, Music, Superheroes, Food" and true for others)
     - tag: optional string (e.g., "Hot", "New", "Retro")
 
     Return the result as a raw JSON list only.
