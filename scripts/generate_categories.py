@@ -126,10 +126,12 @@ def generate_new_categories():
     - description: a short description
     - icon: one of [movie_filter, music_note, bolt, pets, public, videogame_asset, restaurant, etc which matches the title]
     - color: a hex color string starting with 0xFF (e.g., "0xFFFFD700")
-    - fontColor: a hex color string starting with 0xFF ("0xFFFFFFFF" for dark bg, "0xFF000000" for light bg)
     - difficulty: one of [easy, medium, hard]
-    - isLocked: boolean (false for 40% of the category and true for 60%)
+    - isLocked: boolean
     - tag: optional string (e.g., "Hot", "New", "Retro")
+    - words: a JSON array of 40-60 unique strings (the charades words/phrases)
+
+    Note: 40% of generated categories should have isLocked: false, and 60% should have isLocked: true.
 
     Return raw JSON only.
     """
@@ -188,7 +190,12 @@ def merge_categories(existing, newly_generated):
             # For now, we preserve existing metadata like title/description if they exist
         else:
             # New category
-            new_cat['words'] = sorted(list(set(new_cat.get('words', []))))
+            new_words = new_cat.get('words', [])
+            if not new_words:
+                print(f"Warning: Skipping new category {cat_id} because it has no words.")
+                continue
+                
+            new_cat['words'] = sorted(list(set(new_words)))
             category_map[cat_id] = new_cat
             
     return list(category_map.values())
@@ -200,24 +207,35 @@ def validate_and_save(categories):
         return False
 
     # Basic validation
+    valid_categories = []
     for cat in categories:
-        required_fields = ['id', 'title', 'description', 'words']
-        for field in required_fields:
-            if field not in cat:
-                print(f"Validation failed: Category {cat.get('id', 'unknown')} missing field {field}")
-                return False
+        cat_id = cat.get('id', 'unknown')
+        required_fields = ['id', 'title', 'description', 'words', 'color', 'difficulty', 'isLocked']
+        
+        missing = [f for f in required_fields if f not in cat]
+        if missing:
+            print(f"Validation Error: Category {cat_id} is missing fields: {', '.join(missing)}")
+            continue
+            
         if not isinstance(cat['words'], list) or len(cat['words']) == 0:
-            print(f"Validation failed: Category {cat['id']} has no words.")
-            return False
+            print(f"Validation Error: Category {cat_id} has no words.")
+            continue
         
         # Inject or update fontColor based on background color
-        if 'color' in cat:
-            cat['fontColor'] = calculate_font_color(cat['color'])
+        cat['fontColor'] = calculate_font_color(cat['color'])
+        valid_categories.append(cat)
+
+    if not valid_categories:
+        print("Error: No valid categories to save.")
+        return False
+
+    if len(valid_categories) < len(categories):
+        print(f"Warning: {len(categories) - len(valid_categories)} invalid categories were skipped.")
 
     # Save category.json
     with open(CATEGORY_FILE, 'w') as f:
-        json.dump(categories, f, indent=2)
-    print(f"Successfully updated {CATEGORY_FILE}")
+        json.dump(valid_categories, f, indent=2)
+    print(f"Successfully updated {CATEGORY_FILE} with {len(valid_categories)} categories.")
 
     # Update metadata.json
     version = 1
