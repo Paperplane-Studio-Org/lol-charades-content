@@ -1,6 +1,7 @@
 import os
 import json
 import datetime
+import re
 from google import genai
 from dotenv import load_dotenv
 
@@ -65,21 +66,72 @@ def generate_new_categories():
     model_id = 'gemini-flash-latest'
     
     prompt = """
-    Generate a list of 10 diverse and fun charades categories for a mobile game called "LOL Charades". 
-    Include Indian flavours like Tamil Comedy Dialogs, Bollywood hits, Kollywood hits etc.
+    Generate a list of 15 diverse and fun charades categories for a mobile game called "LOL Charades".
+
+    Include these category types:
+
+    Movies:
+    - Bollywood Movies
+    - Kollywood Movies
+    - Tollywood Movies
+    - Mollywood Movies
+    - Hollywood Movies
+
+    Cinema Heroes:
+    - Bollywood Actors
+    - Kollywood Heroes
+    - Tollywood Heroes
+    - Mollywood Actors
+    - Hollywood Actors
+
+    Comedy:
+    - Tamil Comedy Dialogs
+    - Telugu Comedy Dialogs
+    - Hindi Comedy Dialogs
+    - Famous Comedy Scenes
+
+    Punch Dialogues
+    - Tamil Punch Dialogues
+    - Telugu Punch Dialogues
+    - Hindi Punch Dialogues
+    - Famous Punch Dialogues
+
+    Act It Out:
+    - Daily Activities
+    - Funny Situations
+    - Emotions
+    - Jobs and Professions
+    - Actions
+
+    Entertainment:
+    - Web Series
+    - Cartoons
+    - Superheroes
+    - Meme Culture
+    - Famous Characters
+
+    Rules:
+
+    - Generate 40-60 words/phrases per category
+    - Avoid duplicates across categories
+    - Include mix of easy/medium/hard
+    - Use culturally relevant items
+    - Keep phrases short enough for acting
+    - Avoid offensive or copyrighted dialogue lines verbatim
+    - Ensure high replay value
+
     Each category must have:
     - id: a unique slug (e.g., "hollywood_hits")
     - title: a catchy title (e.g., "Blockbuster Movies")
     - description: a short description
-    - icon: one of [movie_filter, music_note, bolt, pets, public, videogame_asset, restaurant]
+    - icon: one of [movie_filter, music_note, bolt, pets, public, videogame_asset, restaurant, etc which matches the title]
     - color: a hex color string starting with 0xFF (e.g., "0xFFFFD700")
     - fontColor: a hex color string starting with 0xFF ("0xFFFFFFFF" for dark bg, "0xFF000000" for light bg)
     - difficulty: one of [easy, medium, hard]
-    - words: a list of 15-20 relevant words or phrases to act out.
-    - isLocked: boolean (false for "Movies, Animals, Music, Superheroes, Food" and true for others)
+    - isLocked: boolean (false for 40% of the category and true for 60%)
     - tag: optional string (e.g., "Hot", "New", "Retro")
 
-    Return the result as a raw JSON list only.
+    Return raw JSON only.
     """
     
     print("Requesting new categories from Gemini...")
@@ -104,6 +156,9 @@ def generate_new_categories():
         # print(f"Raw response: {response.text}")
         return None
 
+def normalize_word(word):
+    return re.sub(r'[^a-z0-9]', '', word.lower())
+
 def merge_categories(existing, newly_generated):
     """Merges newly generated categories into existing ones, removing duplicates."""
     category_map = {c['id']: c for c in existing}
@@ -116,10 +171,15 @@ def merge_categories(existing, newly_generated):
             new_words = new_cat.get('words', [])
             
             # Combine and deduplicate case-insensitively
-            all_words_map = {w.lower(): w for w in existing_words}
+            all_words_map = {
+                normalize_word(w): w
+                for w in existing_words
+            }
+
             for nw in new_words:
-                if nw.lower() not in all_words_map:
-                    all_words_map[nw.lower()] = nw
+                key = normalize_word(nw)
+                if key not in all_words_map:
+                    all_words_map[key] = nw
             
             merged_words = sorted(list(all_words_map.values()))
             category_map[cat_id]['words'] = merged_words
