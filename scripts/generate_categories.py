@@ -96,6 +96,16 @@ def generate_new_categories():
     - Hindi Punch Dialogues
     - Famous Punch Dialogues
 
+    Requirements for Punch Dialogues:
+        - Each item must be a memorable spoken dialogue, catchphrase, or quote.
+        - Do NOT return movie names.
+        - Do NOT return actor names.
+        - Do NOT return scene descriptions.
+        - Do NOT return generic references.
+        - Every item must be something a player can act out or say.
+        - Maximum 5 words per item.
+        - Return only the phrase itself.
+
     Act It Out:
     - Daily Activities
     - Funny Situations
