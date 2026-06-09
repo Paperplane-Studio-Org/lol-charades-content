@@ -3,9 +3,9 @@ name: Refresh Charades Content
 on:
   # Allow manual triggering
   workflow_dispatch:
-  # Scheduled daily execution at midnight UTC
-  # schedule:
-  #   - cron: '0 0 * * *'
+  # Scheduled Sunday 8:00 AM IST
+  schedule:
+    - cron: '30 2 * * 0'
 
 jobs:
   refresh:

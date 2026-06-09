@@ -66,9 +66,7 @@ def generate_new_categories():
     model_id = 'gemini-flash-latest'
     
     prompt = """
-    Generate a list of 15 diverse and fun charades categories for a mobile game called "LOL Charades".
-
-    Include these category types:
+    Generate a list of 15-25 diverse and fun charades categories for a mobile game called "LOL Charades".
 
     Movies:
     - Bollywood Movies
@@ -113,7 +111,75 @@ def generate_new_categories():
     - Jobs and Professions
     - Actions
 
-    Entertainment:
+    Sports Category
+    Examples:
+    - Cricket
+    - Football
+    - Kabaddi
+    - Tennis
+    - Olympics
+
+    Food Category
+    Examples:
+    - Dosa
+    - Pizza
+    - Biryani
+    - Ice Cream
+    - Burger
+
+    Countries Category
+    Examples:
+    - India
+    - Japan
+    - USA
+    - Australia
+
+    Famous Places Category
+    Examples:
+    - Taj Mahal
+    - Eiffel Tower
+    - Great Wall
+
+    Emotions Category
+    Examples:
+    - Angry
+    - Excited
+    - Embarrassed
+    - Jealous
+    - Confused
+
+    Relationships Category
+    Examples:
+    - Teacher
+    - Mother
+    - Brother
+    - Grandfather
+    - Best Friend
+
+    Household Objects Category
+    Examples:
+    - Fan
+    - TV
+    - Washing Machine
+    - Refrigerator
+
+    Festivals Category
+    Examples:
+    - Diwali
+    - Pongal
+    - Christmas
+    - Holi
+
+    Mythology Category
+    Examples:
+    - Hanuman
+    - Krishna
+    - Ravana
+    - Arjuna
+    - Ganesha
+
+    Entertainment: Category
+    Examples:
     - Web Series
     - Cartoons
     - Superheroes
@@ -122,13 +188,38 @@ def generate_new_categories():
 
     Rules:
 
-    - Generate 40-60 words/phrases per category
+    - Generate 60-80 words/phrases per category
     - Avoid duplicates across categories
     - Include mix of easy/medium/hard
     - Use culturally relevant items
     - Keep phrases short enough for acting
     - Avoid offensive or copyrighted dialogue lines verbatim
     - Ensure high replay value
+    - Do not generate a category if a similar category already exists.
+    - Do not generate alternate versions of:
+        - Bollywood Movies
+        - Hollywood Movies
+        - Cartoons
+        - Superheroes
+        - Daily Activities
+        - Jobs
+    - Generate completely new category themes instead.
+
+    QUALITY RULES:
+
+    - Every item must be easily actable in charades.
+    - Avoid semantic duplicates.
+    - Avoid alternate spellings of the same item.
+    - Avoid generic phrases.
+    - Avoid obscure movie titles.
+    - Prefer culturally recognizable items.
+    - Ensure at least 90% of players can recognize the item.
+    - Generate 60-80 items per category.
+    - Maintain replay value.
+    - If a category already exists, generate a different category instead.
+    - Do not repeat items across categories.
+    - For dialogue categories, maximum 5 words.
+    - For dialogue categories, only use famous catchphrases.
 
     Each category must have:
     - id: a unique slug (e.g., "hollywood_hits")
@@ -139,7 +230,7 @@ def generate_new_categories():
     - difficulty: one of [easy, medium, hard]
     - isLocked: boolean
     - tag: optional string (e.g., "Hot", "New", "Retro")
-    - words: a JSON array of 40-60 unique strings (the charades words/phrases)
+    - words: a JSON array of 60-80 unique strings (the charades words/phrases)
 
     Note: 40% of generated categories should have isLocked: false, and 60% should have isLocked: true.
 
