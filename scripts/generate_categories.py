@@ -66,7 +66,7 @@ def generate_new_categories():
     model_id = 'gemini-3.1-flash-lite'
 
     prompt = """
-    Generate a list of 15-25 diverse and fun charades categories for a mobile game called "LOL Charades".
+    Generate words for below mentioned categories for charades game".
 
     Movies:
     - Bollywood Movies
@@ -94,7 +94,7 @@ def generate_new_categories():
     - Hindi Punch Dialogues
     - Famous Punch Dialogues
 
-    Requirements for Punch Dialogues:
+        Rules for Punch Dialogues:
         - Each item must be a memorable spoken dialogue, catchphrase, or quote.
         - Do NOT return movie names.
         - Do NOT return actor names.
