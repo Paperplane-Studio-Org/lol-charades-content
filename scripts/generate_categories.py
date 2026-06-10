@@ -63,8 +63,8 @@ def load_existing_categories():
 
 def generate_new_categories():
     """Generates new categories using Gemini."""
-    model_id = 'gemini-flash-latest'
-    
+    model_id = 'gemini-3.1-flash-lite'
+
     prompt = """
     Generate a list of 15-25 diverse and fun charades categories for a mobile game called "LOL Charades".
 
